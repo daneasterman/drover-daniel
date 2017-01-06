@@ -4,10 +4,14 @@ import { AppRegistry, Alert, View, TextInput, TouchableHighlight, Text } from 'r
 import Style from './Style';
 // import LoginForm from './LoginForm';
 
-class DroverDaniel extends Component { 
+class DroverDaniel extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = { text: 'example@example.com' };
+      }
 
     onPressButtonPOST() {
-
       // let creds = {"partner[email]":"daniel.easterman@gmail.com","partner[password]": "mypassword"};
 
       fetch("https://drover-test.herokuapp.com/app_partners/sign_in", {
@@ -21,9 +25,15 @@ class DroverDaniel extends Component {
         console.log(data);
       }).catch(function(err) {
         console.log(err);
-      });
-    
-    }  
+      });    
+    }
+
+    onSubmitEdit() {
+
+
+
+
+    }
 
 
     render() {
@@ -39,7 +49,7 @@ class DroverDaniel extends Component {
         
         <View style={Style.formContainer}>
         <Text style={Style.label}>E-mail</Text>
-        <TextInput style={Style.input} placeholder="example@example.com" onSubmitEditing={this.onSubmitEdit} />
+        <TextInput style={Style.input} onSubmitEditing={this.onSubmitEdit} />
         <Text style={Style.label}>Password</Text>
         <TextInput style={Style.input} textAlign="left" onSubmitEditing={this.onSubmitEdit} />        
         <TouchableHighlight onPress={this.onSubmitEdit}><Text style={Style.button}>Log in</Text></TouchableHighlight>

@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { AppRegistry, Alert, StyleSheet, View, TextInput, TouchableHighlight, Text } from 'react-native';
 
-// import MyScene from './screens/MyScene';
-
 var DroverDaniel = React.createClass({
 
   _onPressButtonPOST: function() {
@@ -21,9 +19,7 @@ var DroverDaniel = React.createClass({
     // Alert.alert("Response Body -> " +err);
     });
 
-  },
-
-    
+  },    
 
   render: function() {
     return (
@@ -33,7 +29,7 @@ var DroverDaniel = React.createClass({
       </TouchableHighlight>
       </View>
       );
-  },
+  }
 
 });
 

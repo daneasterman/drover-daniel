@@ -2,9 +2,9 @@ import { StyleSheet } from 'react-native';
 
 var Style = StyleSheet.create({
   
-  rootContainer: {    
+  rootContainer: {
     flex: 1,
-    backgroundColor: '#eeeeee'        
+    backgroundColor: '#eeeeee'
   },
 
   formContainer: {
@@ -12,12 +12,12 @@ var Style = StyleSheet.create({
   },
 
   buttonContainer: {
-    flex: 2,    
-    justifyContent: 'center'    
+    flex: 2,
+    justifyContent: 'center'
   },
 
   button: {
-    backgroundColor: '#3E606F',    
+    backgroundColor: '#3E606F',
     padding: 10,
     marginRight: 5,
     marginLeft: 5,
@@ -31,7 +31,7 @@ var Style = StyleSheet.create({
      borderColor: 'grey',
      borderWidth: 1,
      textAlign: "left"
-   },  
+   },
 
   label: {
    marginLeft: 10,
